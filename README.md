@@ -1,6 +1,13 @@
 # Set up SSL & Redirect with NGINX and Certbot
 
 This guide will help you set up SSL with NGINX using Certbot to automatically obtain and configure SSL certificates for your domain.
+
+**Important:** Before proceeding, ensure that the DNS A record for your domain (e.g., `example.domain.com`) is correctly set up and propagating. The domain should point to your server's IP address for Certbot to verify and issue the SSL certificate.
+
+| Type	| Host	| Value	| TTL |
+|---|---|---|---|
+| A	| example.domain.com	| 192.168.1.100	| 3600 |
+
 As a side note, this was done on Ubuntu 22
 
 ---
