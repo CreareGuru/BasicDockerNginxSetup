@@ -71,7 +71,10 @@ Explanation of the proxy headers:
 
 Save and exit the file.
 
+---
+
 ## 2.4 Enable the Site with a Symbolic Link
+
 To enable the site, create a symbolic link in the sites-enabled directory:
 
 ```bash
@@ -91,7 +94,10 @@ If everything is correct, reload NGINX to apply the changes:
 sudo systemctl reload nginx
 ```
 
-##3.1 Install Certbot
+---
+
+## 3.1 Install Certbot
+
 Now that NGINX is configured, the next step is to secure your site with SSL using Certbot.
 
 Install Certbot and the NGINX plugin (if not installed already):
@@ -99,7 +105,8 @@ Install Certbot and the NGINX plugin (if not installed already):
 sudo apt install python3-certbot-nginx
 ```
 
-##3.2 Run Certbot to obtain and install SSL Certificate
+## 3.2 Run Certbot to obtain and install SSL Certificate
+
 ```bash
 sudo certbot --nginx -d example.domain.com
 ```
@@ -110,14 +117,20 @@ What happens during this process:
 - Certbot will automatically modify your NGINX configuration to enable HTTPS (port 443).
 - The NGINX service will be reloaded to apply the changes.
 
-##4 Test HTTPS and your redirect
+---
+
+## 4 Test HTTPS and your redirect
+
 After Certbot finishes, you can test if SSL is working correctly by visiting your site in a browser.
 ```bash
 https://example.domain.com
 ```
 If everything is set up correctly, your site should now load securely over HTTPS with a valid SSL certificate.
 
-Recap
+---
+
+# Recap
+
 - [x] You installed UFW, NGINX, and Certbot.
 - [x] You configured NGINX to act as a reverse proxy for your domain.
 - [x] You used Certbot to automatically secure your site with SSL certificates.
