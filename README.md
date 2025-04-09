@@ -58,7 +58,7 @@ server {
     server_name example.domain.com;
 
     location / {
-        proxy_pass http://localhost:5678;
+        proxy_pass https://localhost:5678; # <-- the port or url you are trying to point to
         proxy_set_header Host $host;
         proxy_set_header X-Real-IP $remote_addr;
         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
