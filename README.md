@@ -1,6 +1,7 @@
 # Set up SSL & Redirect with NGINX and Certbot
 
 This guide will help you set up SSL with NGINX using Certbot to automatically obtain and configure SSL certificates for your domain.
+As a side note, this was done on Ubuntu 22
 
 ---
 
