@@ -148,8 +148,4 @@ If everything is set up correctly, your site should now load securely over HTTPS
 - [x] You used Certbot to automatically secure your site with SSL certificates.
 - [x] Your site is now accessible via HTTPS and is secure.
 
-<p align="center">
-  <a href="https://www.buymeacoffee.com/wynandnel">
-    <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=wynandnel&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff" />
-  </a>
-</p>
+[![Buy me a coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=wynandnel&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff)](https://www.buymeacoffee.com/wynandnel)
